@@ -371,38 +371,3 @@ html, body {
     line-height: 16px;
     color: rgb(var(--rgb-highlight));
 }
-
-/* Add your CRT effect styles here */
-body {
-    position: relative;
-}
-
-body::before {
-    content: "";
-    display: block;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-    background: linear-gradient(transparent 0%, rgba(0, 0, 0, 0.05) 1%, rgba(0, 0, 0, 0.05) 99%, transparent 100%);
-    background-size: 100% 2px;
-    z-index: 9999;
-    opacity: 0.3;
-}
-
-body::after {
-    content: "";
-    display: block;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-    background: radial-gradient(circle, transparent 0%, rgba(0, 0, 0, 0.05) 1%, rgba(0, 0, 0, 0.05) 99%, transparent 100%);
-    background-size: 2px 2px;
-    z-index: 9999;
-    opacity: 0.3;
-}
