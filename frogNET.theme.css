@@ -62,7 +62,7 @@
  
  html, body {
      font-family: "Share Tech Mono", monospace;
-     color: rgb(var(--rgb-text)); /* Ensure text is bright green */
+     color: var(--highlight); /* Set the text color */
  }
  
  .appMount_ea7e65, .app_a01fb1, .bg_d4b6c5, .guilds_a4d4d9, .scroller_fea3ef, .sidebar_a4d4d9, .container_ee69e0, .panels_a4d4d9, .container_b2ca13, .chat_a7d72e, .chatContent_a7d72e, .title_a7d72e, .searchBar_a46bef, .container_cbd271, .members_cbd271, .content_a7d72e, .container_e9f61e, .scrollableContainer_d0696b, .channelTextArea_d0696b, .container_c2739c, .section_cd82a7, .nowPlayingColumn_c2739c, .container_bf550a, .itemCard_f02fcf, .section_cd82a7, .inset_c0f6a6, .container_e44302, .privateChannels_f0963d, .scroller_c47fa9, .layer_d4b6c5, .standardSidebarView_c25c6d, .sidebarRegionScroller_c25c6d, .contentRegion_c25c6d, .contentRegionScroller_c25c6d, .container_ad8f79, .stickyHeader_f1629a, .scroller_c100ff, .pageWrapper_a3a4ce, .container_a6d69a {
@@ -124,15 +124,18 @@
  
  .autocomplete_f23da8 {
      background-color: var(--background) !important;
+     color: var(--highlight) !important; /* Ensure text is green in autocomplete */
  }
  
  .channelTextArea_a7d72e {
      border: 1px solid var(--highlight);
      background-color: var(--background) !important;
+     color: var(--highlight); /* Set text color in text area */
  }
  
  .userProfileInnerThemedNonPremium_c69a7b {
      background-color: var(--background);
+     color: var(--highlight); /* Set text color in user profile */
  }
  
  .theme-dark .children_e44302:after, .form_a7d72e::before, .option_b0286e:after {
@@ -141,6 +144,7 @@
  
  .userPanelInnerThemed-2xZFjl {
      background-color: var(--background);
+     color: var(--highlight); /* Set text color in user panel */
  }
  
  .containerDefault_f6f816 .name_d8bfb3 {
@@ -152,11 +156,11 @@
  }
  
  .containerDefault_f6f816 .modeSelected_d8bfb3 .icon_d8bfb3, .containerDefault_f6f816 .modeUnreadImportant_d8bfb3 .icon_d8bfb3 {
-     color: var(--text);
+     color: var(--highlight); /* Set text color in selected and important modes */
  }
  
  .containerDefault_f6f816 .modeSelected_d8bfb3 .name_d8bfb3 {
-     color: var(--text);
+     color: var(--highlight); /* Set text color in selected mode */
  }
  
  .containerDefault_f6f816 .modeSelected_d8bfb3 .wrapper_d8bfb3 {
@@ -215,32 +219,5 @@
      font-size: 12px;
      line-height: 16px;
      color: rgb(var(--rgb-highlight));
- }
- 
- /* Button modifications */
- .button-38aScr {
-     background-color: rgba(var(--rgb-highlight), 20%);
-     color: var(--rgb-text);
- }
- 
- .button-38aScr:hover {
-     background-color: rgba(var(--rgb-highlight), 70%);
- }
- 
- .button-38aScr:active {
-     background-color: rgba(var(--rgb-highlight), 100%);
- }
- 
- .button-outline-38aScr {
-     border: 1px solid var(--highlight);
-     color: var(--highlight);
- }
- 
- .button-outline-38aScr:hover {
-     background-color: rgba(var(--rgb-highlight), 20%);
- }
- 
- .button-outline-38aScr:active {
-     background-color: rgba(var(--rgb-highlight), 30%);
  }
  
