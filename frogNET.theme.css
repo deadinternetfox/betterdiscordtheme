@@ -8,14 +8,13 @@
  * @invite thefrogs
  */
 
- @import url('https://B4T3S.github.io/Fallout4TerminalTheme/mainRewrite.css');
+
  /* ^ This is the main Import ^ DO NOT TOUCH. Without this, the theme won't load!!! */
  
  @import url('https://B4T3S.github.io/Fallout4TerminalTheme/css/crtEffect.css');
  /* ^ This is the CRT effect. If you don't like it, remove or uncomment this line! ^ */
- @import url('https://raw.githubusercontent.com/deadinternetfox/betterdiscordtheme/main/main.css');
  @import url('https://raw.githubusercontent.com/deadinternetfox/betterdiscordtheme/main/mainRewrite.css');
- @import url('https://raw.githubusercontent.com/deadinternetfox/betterdiscordtheme/main/crtEffect.css');
+ 
  /* CUSTOMIZE COLORS IN HERE! */
  :root {
    --main-color: #56b417; /* main accent color (hex, rgb or hsl) [default: #2780e6] */
