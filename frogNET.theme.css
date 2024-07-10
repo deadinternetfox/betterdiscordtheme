@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
 
 /**
  * @name FrogNET H4X0R
@@ -13,7 +13,7 @@
 
 @import url('https://raw.githubusercontent.com/deadinternetfox/betterdiscordtheme/main/crtEffect.css');
 /* ^ This is the CRT effect. If you don't like it, remove or uncomment this line! ^ */
-
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
 /* CUSTOMIZE COLORS IN HERE! */
 :root {
     --rgb-highlight: 74, 239, 152; /* The main highlight color */
