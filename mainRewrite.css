@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+@import url('https://raw.githubusercontent.com/deadinternetfox/betterdiscordtheme/main/mainRewrite.css');
+@import url('https://raw.githubusercontent.com/deadinternetfox/betterdiscordtheme/main/crtEffect.css');
 
 :root, .theme-dark, .theme-light {
-    --highlight: rgb(var(--rgb-highlight));
+    --highlight: rgb(74, 239, 152);
     --rgb-background: 0, 9, 0;
     --background: rgb(var(--rgb-background));
-    --text: rgb(var(--rgb-text));
+    --text: rgb(var(--highlight));  /* Ensure all text uses the highlight color */
     --rgb-close-button: 212, 18, 39;
     --close-button: rgb(var(--rgb-close-button));
     --rgb-online-color: 57, 255, 20;
@@ -74,138 +76,138 @@
     --text-link-low-saturation: rgba(var(--rgb-highlight), 50%);
     --text-positive: var(--online-color);
     --text-warning: var(--afk-color);
-    --text-danger: var(--dnd-color);
-    --text-brand: var(--highlight);
-    --text-normal: var(--text);
-    --text-muted: var(--text);
-    --channels-default: var(--text);
-    --button-danger-background-disabled: rgba(var(--rgb-close-button), 20%);
-    --button-danger-background: rgba(var(--rgb-close-button), 20%);
-    --button-danger-background-hover: rgba(var(--rgb-close-button), 70%);
-    --button-danger-background-active: rgba(var(--rgb-close-button), 100%);
-    --button-outline-danger-border: rgba(var(--rgb-close-button), 50%);
-    --button-outline-danger-background: rgba(var(--rgb-close-button), 50%);
-    --button-outline-danger-background-hover: rgba(var(--rgb-close-button), 70%);
-    --button-outline-danger-background-active: rgba(var(--rgb-close-button), 100%);
-    --button-outline-danger-text: rgba(var(--rgb-close-button), 50%);
-    --button-outline-danger-text-hover: rgba(var(--rgb-close-button), 70%);
-    --button-outline-danger-text-active: rgba(var(--rgb-close-button), 100%);
-    --button-outline-danger-border-hover: rgba(var(--rgb-close-button), 70%);
-    --button-outline-danger-border-active: rgba(var(--rgb-close-button), 100%);
-    --button-positive-background-disabled: rgba(var(--rgb-online-color), 20%);
-    --button-positive-background: rgba(var(--rgb-online-color), 20%);
-    --button-positive-background-hover: rgba(var(--rgb-online-color), 70%);
-    --button-positive-background-active: rgba(var(--rgb-online-color), 100%);
-    --button-outline-positive-border: rgba(var(--rgb-online-color), 50%);
-    --button-outline-positive-background: rgba(var(--rgb-online-color), 50%);
-    --button-outline-positive-background-hover: rgba(var(--rgb-online-color), 70%);
-    --button-outline-positive-background-active: rgba(var(--rgb-online-color), 100%);
-    --button-outline-positive-text: rgba(var(--rgb-online-color), 50%);
-    --button-outline-positive-text-hover: rgba(var(--rgb-online-color), 70%);
-    --button-outline-positive-text-active: rgba(var(--rgb-online-color), 100%);
-    --button-outline-positive-border-hover: rgba(var(--rgb-online-color), 70%);
-    --button-outline-positive-border-active: rgba(var(--rgb-online-color), 100%);
-    --button-primary-background-disabled: rgba(var(--rgb-highlight), 20%);
-    --button-primary-background: rgba(var(--rgb-highlight), 20%);
-    --button-primary-background-hover: rgba(var(--rgb-highlight), 70%);
-    --button-primary-background-active: rgba(var(--rgb-highlight), 100%);
-    --button-outline-primary-border: rgba(var(--rgb-highlight), 50%);
-    --button-outline-primary-background: rgba(var(--rgb-highlight), 50%);
-    --button-outline-primary-background-hover: rgba(var(--rgb-highlight), 70%);
-    --button-outline-primary-background-active: rgba(var(--rgb-highlight), 100%);
-    --button-outline-primary-text: rgba(var(--rgb-highlight), 50%);
-    --button-outline-primary-text-hover: rgba(var(--rgb-highlight), 70%);
-    --button-outline-primary-text-active: rgba(var(--rgb-highlight), 100%);
-    --button-outline-primary-border-hover: rgba(var(--rgb-highlight), 70%);
-    --button-outline-primary-border-active: rgba(var(--rgb-highlight), 100%);
-    --button-secondary-background-disabled: rgba(var(--rgb-highlight), 20%);
-    --button-secondary-background: rgba(var(--rgb-highlight), 20%);
-    --button-secondary-background-hover: rgba(var(--rgb-highlight), 70%);
-    --button-secondary-background-active: rgba(var(--rgb-highlight), 100%);
-    --button-outline-secondary-border: rgba(var(--rgb-highlight), 50%);
-    --button-outline-secondary-background: rgba(var(--rgb-highlight), 50%);
-    --button-outline-secondary-background-hover: rgba(var(--rgb-highlight), 70%);
-    --button-outline-secondary-background-active: rgba(var(--rgb-highlight), 100%);
-    --button-outline-secondary-text: rgba(var(--rgb-highlight), 50%);
-    --button-outline-secondary-text-hover: rgba(var(--rgb-highlight), 70%);
-    --button-outline-secondary-text-active: rgba(var(--rgb-highlight), 100%);
-    --button-outline-secondary-border-hover: rgba(var(--rgb-highlight), 70%);
-    --button-outline-secondary-border-active: rgba(var(--rgb-highlight), 100%);
-    --button-brand-background-disabled: rgba(var(--rgb-highlight), 20%);
-    --button-brand-background: rgba(var(--rgb-highlight), 20%);
-    --button-brand-background-hover: rgba(var(--rgb-highlight), 70%);
-    --button-brand-background-active: rgba(var(--rgb-highlight), 100%);
-    --button-outline-brand-border: rgba(var(--rgb-highlight), 50%);
-    --button-outline-brand-background: rgba(var(--rgb-highlight), 50%);
-    --button-outline-brand-background-hover: rgba(var(--rgb-highlight), 70%);
-    --button-outline-brand-background-active: rgba(var(--rgb-highlight), 100%);
-    --button-outline-brand-text: rgba(var(--rgb-highlight), 50%);
-    --button-outline-brand-text-hover: rgba(var(--rgb-highlight), 70%);
-    --button-outline-brand-text-active: rgba(var(--rgb-highlight), 100%);
-    --button-outline-brand-border-hover: rgba(var(--rgb-highlight), 70%);
-    --button-outline-brand-border-active: rgba(var(--rgb-highlight), 100%);
-    --search-popout-option-user-nickname: var(--highlight);
-    --search-popout-option-user-username: rgba(var(--rgb-highlight), 70%);
-    --search-popout-option-filter-text: rgba(var(--rgb-highlight), 70%);
-    --search-popout-date-picker-border: 1px solid var(--highlight);
-    --interactive-muted: rgba(var(--rgb-highlight), 20%);
-    --interactive-normal: rgba(var(--rgb-highlight), 50%);
-    --interactive-hover: rgba(var(--rgb-highlight), 100%);
-    --interactive-active: rgb(var(--rgb-highlight));
-    --status-danger: var(--dnd-color);
-    --status-warning: var(--afk-color);
-    --status-positive: var(--online-color);
-    --profile-gradient-primary-color: var(--rgb-background);
-    --profile-gradient-secondary-color: var(--rgb-background);
-    --brand-experiment: var(--highlight);
-    --brand-experiment-100: var(--highlight);
-    --brand-experiment-130: var(--highlight);
-    --brand-experiment-160: var(--highlight);
-    --brand-experiment-200: var(--highlight);
-    --brand-experiment-230: var(--highlight);
-    --brand-experiment-260: var(--highlight);
-    --brand-experiment-300: var(--highlight);
-    --brand-experiment-330: var(--highlight);
-    --brand-experiment-360: var(--highlight);
-    --brand-experiment-400: var(--highlight);
-    --brand-experiment-430: var(--highlight);
-    --brand-experiment-460: var(--highlight);
-    --brand-experiment-500: var(--highlight);
-    --brand-experiment-530: var(--highlight);
-    --brand-experiment-560: var(--highlight);
-    --brand-experiment-600: var(--highlight);
-    --brand-experiment-630: var(--highlight);
-    --brand-experiment-660: var(--highlight);
-    --brand-experiment-700: var(--highlight);
-    --brand-experiment-730: var(--highlight);
-    --brand-experiment-760: var(--highlight);
-    --brand-experiment-800: var(--highlight);
-    --brand-experiment-830: var(--highlight);
-    --brand-experiment-860: var(--highlight);
-    --brand-experiment-900: var(--highlight);
-    --brand-experiment-930: var(--highlight);
-    --brand-experiment-960: var(--highlight);
-    --brand-experiment-05a: var(--highlight);
-    --brand-experiment-10a: var(--highlight);
-    --brand-experiment-15a: var(--highlight);
-    --brand-experiment-20a: var(--highlight);
-    --brand-experiment-25a: var(--highlight);
-    --brand-experiment-30a: var(--highlight);
-    --brand-experiment-35a: var(--highlight);
-    --brand-experiment-40a: var(--highlight);
-    --brand-experiment-45a: var(--highlight);
-    --brand-experiment-50a: var(--highlight);
-    --brand-experiment-55a: var(--highlight);
-    --brand-experiment-60a: var(--highlight);
-    --brand-experiment-65a: var(--highlight);
-    --brand-experiment-70a: var(--highlight);
-    --brand-experiment-75a: var(--highlight);
-    --brand-experiment-80a: var(--highlight);
-    --brand-experiment-85a: var(--highlight);
-    --brand-experiment-90a: var(--highlight);
-    --brand-experiment-95a: var(--highlight);
-    --primary-630: var(--background);
-    --brand-500: var(--highlight);
+    --text-danger: var (--dnd-color);
+    --text-brand: var (--highlight);
+    --text-normal: var (--text);
+    --text-muted: var (--text);
+    --channels-default: var (--text);
+    --button-danger-background-disabled: rgba(var (--rgb-close-button), 20%);
+    --button-danger-background: rgba(var (--rgb-close-button), 20%);
+    --button-danger-background-hover: rgba(var (--rgb-close-button), 70%);
+    --button-danger-background-active: rgba(var (--rgb-close-button), 100%);
+    --button-outline-danger-border: rgba(var (--rgb-close-button), 50%);
+    --button-outline-danger-background: rgba(var (--rgb-close-button), 50%);
+    --button-outline-danger-background-hover: rgba(var (--rgb-close-button), 70%);
+    --button-outline-danger-background-active: rgba(var (--rgb-close-button), 100%);
+    --button-outline-danger-text: rgba(var (--rgb-close-button), 50%);
+    --button-outline-danger-text-hover: rgba(var (--rgb-close-button), 70%);
+    --button-outline-danger-text-active: rgba(var (--rgb-close-button), 100%);
+    --button-outline-danger-border-hover: rgba(var (--rgb-close-button), 70%);
+    --button-outline-danger-border-active: rgba(var (--rgb-close-button), 100%);
+    --button-positive-background-disabled: rgba(var (--rgb-online-color), 20%);
+    --button-positive-background: rgba(var (--rgb-online-color), 20%);
+    --button-positive-background-hover: rgba(var (--rgb-online-color), 70%);
+    --button-positive-background-active: rgba(var (--rgb-online-color), 100%);
+    --button-outline-positive-border: rgba(var (--rgb-online-color), 50%);
+    --button-outline-positive-background: rgba(var (--rgb-online-color), 50%);
+    --button-outline-positive-background-hover: rgba(var (--rgb-online-color), 70%);
+    --button-outline-positive-background-active: rgba(var (--rgb-online-color), 100%);
+    --button-outline-positive-text: rgba(var (--rgb-online-color), 50%);
+    --button-outline-positive-text-hover: rgba(var (--rgb-online-color), 70%);
+    --button-outline-positive-text-active: rgba(var (--rgb-online-color), 100%);
+    --button-outline-positive-border-hover: rgba(var (--rgb-online-color), 70%);
+    --button-outline-positive-border-active: rgba(var (--rgb-online-color), 100%);
+    --button-primary-background-disabled: rgba(var (--rgb-highlight), 20%);
+    --button-primary-background: rgba(var (--rgb-highlight), 20%);
+    --button-primary-background-hover: rgba(var (--rgb-highlight), 70%);
+    --button-primary-background-active: rgba(var (--rgb-highlight), 100%);
+    --button-outline-primary-border: rgba(var (--rgb-highlight), 50%);
+    --button-outline-primary-background: rgba(var (--rgb-highlight), 50%);
+    --button-outline-primary-background-hover: rgba(var (--rgb-highlight), 70%);
+    --button-outline-primary-background-active: rgba(var (--rgb-highlight), 100%);
+    --button-outline-primary-text: rgba(var (--rgb-highlight), 50%);
+    --button-outline-primary-text-hover: rgba(var (--rgb-highlight), 70%);
+    --button-outline-primary-text-active: rgba(var (--rgb-highlight), 100%);
+    --button-outline-primary-border-hover: rgba(var (--rgb-highlight), 70%);
+    --button-outline-primary-border-active: rgba(var (--rgb-highlight), 100%);
+    --button-secondary-background-disabled: rgba(var (--rgb-highlight), 20%);
+    --button-secondary-background: rgba(var (--rgb-highlight), 20%);
+    --button-secondary-background-hover: rgba(var (--rgb-highlight), 70%);
+    --button-secondary-background-active: rgba(var (--rgb-highlight), 100%);
+    --button-outline-secondary-border: rgba(var (--rgb-highlight), 50%);
+    --button-outline-secondary-background: rgba(var (--rgb-highlight), 50%);
+    --button-outline-secondary-background-hover: rgba(var (--rgb-highlight), 70%);
+    --button-outline-secondary-background-active: rgba(var (--rgb-highlight), 100%);
+    --button-outline-secondary-text: rgba(var (--rgb-highlight), 50%);
+    --button-outline-secondary-text-hover: rgba(var (--rgb-highlight), 70%);
+    --button-outline-secondary-text-active: rgba(var (--rgb-highlight), 100%);
+    --button-outline-secondary-border-hover: rgba(var (--rgb-highlight), 70%);
+    --button-outline-secondary-border-active: rgba(var (--rgb-highlight), 100%);
+    --button-brand-background-disabled: rgba(var (--rgb-highlight), 20%);
+    --button-brand-background: rgba(var (--rgb-highlight), 20%);
+    --button-brand-background-hover: rgba(var (--rgb-highlight), 70%);
+    --button-brand-background-active: rgba(var (--rgb-highlight), 100%);
+    --button-outline-brand-border: rgba(var (--rgb-highlight), 50%);
+    --button-outline-brand-background: rgba(var (--rgb-highlight), 50%);
+    --button-outline-brand-background-hover: rgba(var (--rgb-highlight), 70%);
+    --button-outline-brand-background-active: rgba(var (--rgb-highlight), 100%);
+    --button-outline-brand-text: rgba(var (--rgb-highlight), 50%);
+    --button-outline-brand-text-hover: rgba(var (--rgb-highlight), 70%);
+    --button-outline-brand-text-active: rgba(var (--rgb-highlight), 100%);
+    --button-outline-brand-border-hover: rgba(var (--rgb-highlight), 70%);
+    --button-outline-brand-border-active: rgba(var (--rgb-highlight), 100%);
+    --search-popout-option-user-nickname: var (--highlight);
+    --search-popout-option-user-username: rgba(var (--rgb-highlight), 70%);
+    --search-popout-option-filter-text: rgba(var (--rgb-highlight), 70%);
+    --search-popout-date-picker-border: 1px solid var (--highlight);
+    --interactive-muted: rgba(var (--rgb-highlight), 20%);
+    --interactive-normal: rgba(var (--rgb-highlight), 50%);
+    --interactive-hover: rgba(var (--rgb-highlight), 100%);
+    --interactive-active: rgb(var (--rgb-highlight));
+    --status-danger: var (--dnd-color);
+    --status-warning: var (--afk-color);
+    --status-positive: var (--online-color);
+    --profile-gradient-primary-color: var (--rgb-background);
+    --profile-gradient-secondary-color: var (--rgb-background);
+    --brand-experiment: var (--highlight);
+    --brand-experiment-100: var (--highlight);
+    --brand-experiment-130: var (--highlight);
+    --brand-experiment-160: var (--highlight);
+    --brand-experiment-200: var (--highlight);
+    --brand-experiment-230: var (--highlight);
+    --brand-experiment-260: var (--highlight);
+    --brand-experiment-300: var (--highlight);
+    --brand-experiment-330: var (--highlight);
+    --brand-experiment-360: var (--highlight);
+    --brand-experiment-400: var (--highlight);
+    --brand-experiment-430: var (--highlight);
+    --brand-experiment-460: var (--highlight);
+    --brand-experiment-500: var (--highlight);
+    --brand-experiment-530: var (--highlight);
+    --brand-experiment-560: var (--highlight);
+    --brand-experiment-600: var (--highlight);
+    --brand-experiment-630: var (--highlight);
+    --brand-experiment-660: var (--highlight);
+    --brand-experiment-700: var (--highlight);
+    --brand-experiment-730: var (--highlight);
+    --brand-experiment-760: var (--highlight);
+    --brand-experiment-800: var (--highlight);
+    --brand-experiment-830: var (--highlight);
+    --brand-experiment-860: var (--highlight);
+    --brand-experiment-900: var (--highlight);
+    --brand-experiment-930: var (--highlight);
+    --brand-experiment-960: var (--highlight);
+    --brand-experiment-05a: var (--highlight);
+    --brand-experiment-10a: var (--highlight);
+    --brand-experiment-15a: var (--highlight);
+    --brand-experiment-20a: var (--highlight);
+    --brand-experiment-25a: var (--highlight);
+    --brand-experiment-30a: var (--highlight);
+    --brand-experiment-35a: var (--highlight);
+    --brand-experiment-40a: var (--highlight);
+    --brand-experiment-45a: var (--highlight);
+    --brand-experiment-50a: var (--highlight);
+    --brand-experiment-55a: var (--highlight);
+    --brand-experiment-60a: var (--highlight);
+    --brand-experiment-65a: var (--highlight);
+    --brand-experiment-70a: var (--highlight);
+    --brand-experiment-75a: var (--highlight);
+    --brand-experiment-80a: var (--highlight);
+    --brand-experiment-85a: var (--highlight);
+    --brand-experiment-90a: var (--highlight);
+    --brand-experiment-95a: var (--highlight);
+    --primary-630: var (--background);
+    --brand-500: var (--highlight);
 }
 
 body {
@@ -218,6 +220,7 @@ body {
 
 html, body {
     font-family: "Share Tech Mono", monospace;
+    color: var(--highlight); /* Set the text color */
 }
 
 .appMount_ea7e65, .app_a01fb1, .bg_d4b6c5, .guilds_a4d4d9, .scroller_fea3ef, .sidebar_a4d4d9, .container_ee69e0, .panels_a4d4d9, .container_b2ca13, .chat_a7d72e, .chatContent_a7d72e, .title_a7d72e, .searchBar_a46bef, .container_cbd271, .members_cbd271, .content_a7d72e, .container_e9f61e, .scrollableContainer_d0696b, .channelTextArea_d0696b, .container_c2739c, .section_cd82a7, .nowPlayingColumn_c2739c, .container_bf550a, .itemCard_f02fcf, .section_cd82a7, .inset_c0f6a6, .container_e44302, .privateChannels_f0963d, .scroller_c47fa9, .layer_d4b6c5, .standardSidebarView_c25c6d, .sidebarRegionScroller_c25c6d, .contentRegion_c25c6d, .contentRegionScroller_c25c6d, .container_ad8f79, .stickyHeader_f1629a, .scroller_c100ff, .pageWrapper_a3a4ce, .container_a6d69a {
@@ -273,21 +276,24 @@ html, body {
 }
 
 .bar_c10249 {
-    background-color: var(--highlight);
-    color: var(--background);
+    background-color: var (--highlight);
+    color: var (--background);
 }
 
 .autocomplete_f23da8 {
     background-color: var(--background) !important;
+    color: var(--highlight) !important; /* Ensure text is green in autocomplete */
 }
 
 .channelTextArea_a7d72e {
-    border: 1px solid var(--highlight);
-    background-color: var(--background) !important;
+    border: 1px solid var (--highlight);
+    background-color: var (--background) !important;
+    color: var (--highlight); /* Set text color in text area */
 }
 
 .userProfileInnerThemedNonPremium_c69a7b {
     background-color: var(--background);
+    color: var(--highlight); /* Set text color in user profile */
 }
 
 .theme-dark .children_e44302:after, .form_a7d72e::before, .option_b0286e:after {
@@ -296,6 +302,7 @@ html, body {
 
 .userPanelInnerThemed-2xZFjl {
     background-color: var(--background);
+    color: var(--highlight); /* Set text color in user panel */
 }
 
 .containerDefault_f6f816 .name_d8bfb3 {
@@ -307,11 +314,11 @@ html, body {
 }
 
 .containerDefault_f6f816 .modeSelected_d8bfb3 .icon_d8bfb3, .containerDefault_f6f816 .modeUnreadImportant_d8bfb3 .icon_d8bfb3 {
-    color: var(--text);
+    color: var(--highlight); /* Set text color in selected and important modes */
 }
 
 .containerDefault_f6f816 .modeSelected_d8bfb3 .name_d8bfb3 {
-    color: var(--text);
+    color: var(--highlight); /* Set text color in selected mode */
 }
 
 .containerDefault_f6f816 .modeSelected_d8bfb3 .wrapper_d8bfb3 {
