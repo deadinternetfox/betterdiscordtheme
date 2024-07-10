@@ -1,4 +1,4 @@
-@import "https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap";
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
 
 :root, .theme-dark, .theme-light {
     --highlight: rgb(var(--rgb-highlight));
@@ -299,7 +299,7 @@ html, body {
 }
 
 .containerDefault_f6f816 .name_d8bfb3 {
-    color: var(--text);
+    color: var(--channel-icon);
 }
 
 .containerDefault_f6f816 .modeMuted_d8bfb3 .name_d8bfb3 {
