@@ -28,7 +28,7 @@
     --background-brightness: 100%;
     --show-original-title: 0;
     --show-custom-title: 1;
-    --custom-title-text: "FrogNet H4x0R";
+    --custom-title-text: "FrogNET H4X0R";
     --custom-title-font-size: 16px;
     --custom-title-font-weight: bold;
     --custom-title-margin-top: 0px;
@@ -334,4 +334,3 @@ html,body{
     line-height:16px;
     color:rgb(var(--rgb-highlight))
 }
- 
