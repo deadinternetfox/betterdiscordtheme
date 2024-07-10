@@ -21,7 +21,7 @@
     --scrollbar-auto-track: transparent;
     --scrollbar-auto-scrollbar-color-track: transparent;
     --transition-time: 0.3s;
-    --background-image: unset;
+    --background-image: https://raw.githubusercontent.com/deadinternetfox/betterdiscordtheme/main/bg.png;
     --background-position: center;
     --background-size: cover;
     --background-blur: 5px;
