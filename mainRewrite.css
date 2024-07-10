@@ -118,7 +118,7 @@ body *, .userPopout-3XzG_A * {
 }
 
 .wordmarkWindows-2dq6rw::after {
-  content: '';
+  content: 'H4x0r';
   display: inline-block;
   -webkit-mask-image: url("https://raw.githubusercontent.com/deadinternetfox/betterdiscordtheme/main/frognet.svg");
   -webkit-mask-repeat: no-repeat;
